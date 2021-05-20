@@ -40,7 +40,8 @@ typedef struct{
 #define MENU_MAIN_FIVE "\nE. LISTAR SERVICIOS."
 #define MENU_MAIN_SIX "\nF. LISTAR TRABAJOS POR MARCA."
 #define MENU_MAIN_SEVEN "\nG. INFORME DE DEMANDA DE SERVICIOS."
-#define MENU_MAIN_EIGTH "\nH. Salir."
+#define MENU_MAIN_EIGTH "\nH. CANTIDAD DE BICICLETAS ROJAS."
+#define MENU_MAIN_NINE "\nI. Salir."
 
 //Outut Modify Menu
 #define MENU_MOD_ONE "\n1. Cambiar Marca."
