@@ -454,7 +454,7 @@ int main_menu( sWork* works, int worksLength, sBike* bikes, int bikesLen, sServi
 {
 	int returnAux = -1;
 	char option = ' ';
-	char options[LEN_MAIN_OPT] = "ABCDEFGH\n";
+	char options[LEN_MAIN_OPT] = "ABCDEFGHI\n";
 	if( works != NULL && worksLength > 0 )
 	{
 		do
@@ -541,11 +541,22 @@ int main_menu( sWork* works, int worksLength, sBike* bikes, int bikesLen, sServi
 				}
 				break;
 			case 'H':
+				if( work_isNotEmpty(works, worksLength) == 1 )
+				{
+					returnAux = main_redBikes(works, worksLength, bikes, bikesLen);
+				}
+				else
+				{
+					printf( TXT_EMPTY_DATABASE );
+					sys_pause();
+				}
+				break;
+			case 'I':
 				printf( GOODBYE );
 				returnAux = 0;
 				break;
 			}
-		}while( option != 'H' && returnAux == 0 );
+		}while( option != 'I' && returnAux == 0 );
 	}
 	return returnAux;
 }

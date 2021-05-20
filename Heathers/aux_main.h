@@ -94,7 +94,7 @@ typedef struct{
 #define MAX_SERVICES_ID 20003
 #define MIN_SERVICES_ID 20000
 #define MAX_TRYS 3
-#define LEN_MAIN_OPT 9
+#define LEN_MAIN_OPT 10
 #define LEN_MODY_OPT 4
 #define LEN_INT_YN_OPT 2
 
