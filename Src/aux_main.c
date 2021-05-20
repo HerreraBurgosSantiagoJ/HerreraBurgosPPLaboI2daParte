@@ -424,6 +424,7 @@ void main_menuShow( void )
 	printf( MENU_MAIN_FIVE );
 	printf( MENU_MAIN_SIX );
 	printf( MENU_MAIN_SEVEN );
+	printf( MENU_MAIN_EIGTH );
 }
 
 int main_menu( sWork* works, int worksLength, sBike* bikes, int bikesLen, sService* services, int servLength )
