@@ -29,6 +29,7 @@ typedef struct{
 #define SUB_TITLE_LIST_WORKS_BRAND "LISTA DE TRABAJOS POR MARCA"
 #define SUB_TITLE_LIST_SERV "LISTA DE SERVICIOS"
 #define SUB_TITLE_INFORM_SERV_DEMAND "INFORME DE DEMANDA DE SERVICIOS"
+#define SUB_TITLE_BICICLETAS_ROJAS "BICICLETAS ROJAS"
 #define SUB_TITLE_ERROR "Error"
 
 //Output Menu(Main)
@@ -54,6 +55,7 @@ typedef struct{
 #define TXT_WORK_DATA "\nID: %05d\nMarca: %s\nRodado: %d\nColor: %s\nServicio: %s\nFecha: %02d/%02d/%04d"
 #define TXT_INFORM_SERV_DEMAND "\n1. %s: %d Pedidos\n2. %s: %d Pedidos\n3. %s: %d Pedidos\n4. %s: %d Pedidos"
 #define TXT_REMOVAL_SUCCESES "\nTrabajo dado de BAJA correctamente."
+#define TXT_RED_BIKES "\nEl numero de bicicletas rojas ingresadas es %d."
 #define GOODBYE "\nHasta Luego! :D\n"
 
 //Output Errors

@@ -415,6 +415,29 @@ int main_informServDemand( sWork* works, int worksLen, sService* services, int s
 	return returnAux;
 }
 
+int main_redBikes( sWork* works, int worksLen, sBike* bikes, int bikesLen )
+{
+	int returnAux = -1;
+	int auxBikes = 0;
+	int redBikes = 0;
+	if( works != NULL && bikes != NULL && worksLen > 0 && bikesLen > 0 )
+	{
+		for( int i = 0; i < worksLen; i++ )
+		{
+			auxBikes = bike_findById(bikes, bikesLen, works[i].idBike);
+			if( strcmp(bikes[auxBikes].color,"Rojo\n") == 0 )
+			{
+				redBikes++;
+			}
+		}
+		progHeader(TITLE);
+		subHeader(SUB_TITLE_BICICLETAS_ROJAS);
+		printf(TXT_RED_BIKES, redBikes);
+		returnAux = 0;
+	}
+	return returnAux;
+}
+
 void main_menuShow( void )
 {
 	printf( MENU_MAIN_ONE );
@@ -522,7 +545,7 @@ int main_menu( sWork* works, int worksLength, sBike* bikes, int bikesLen, sServi
 				returnAux = 0;
 				break;
 			}
-		}while( option != ' ' && returnAux == 0 );
+		}while( option != 'H' && returnAux == 0 );
 	}
 	return returnAux;
 }
